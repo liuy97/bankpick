@@ -2,6 +2,12 @@
 
 mobile bank app with NativeScript and Angular
 
+## run app
+```shell
+ns run ios
+ns run android
+```
+
 ## features
 1. performance
 2. on-boarding
@@ -24,6 +30,7 @@ mobile bank app with NativeScript and Angular
 ![on-boarding-3](https://github.com/liuy97/bankpick/blob/main/screenshots/on-boarding-3.png)
 ![my-profile](https://github.com/liuy97/bankpick/blob/main/screenshots/my-profile.png)
 ![edit-profile](https://github.com/liuy97/bankpick/blob/main/screenshots/edit-profile.png)
+![terms-condtions](https://github.com/liuy97/bankpick/blob/main/screenshots/terms-conditions.png)
 
 ## License
 
