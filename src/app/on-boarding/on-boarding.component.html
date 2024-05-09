@@ -1,0 +1,36 @@
+<GridLayout rows="* 50 auto 50" class="m-x-20">
+  <GridLayout rows="* auto auto auto" (swipe)="onSwipe($event)">
+    <Image
+      row="0"
+      [src]="onboardingSteps[current].image"
+      stretch="aspectFit"
+    ></Image>
+    <GridLayout row="1" columns="* auto 7 auto 7 auto *" marginBottom="36">
+      <StackLayout
+        col="1"
+        [ngClass]="current === 0 ? 'active' : 'inactive'"
+      ></StackLayout>
+      <StackLayout
+        col="3"
+        [ngClass]="current === 1 ? 'active' : 'inactive'"
+      ></StackLayout>
+      <StackLayout
+        col="5"
+        [ngClass]="current === 2 ? 'active' : 'inactive'"
+      ></StackLayout>
+    </GridLayout>
+    <Label
+      row="2"
+      textWrap="true"
+      [text]="onboardingSteps[current].title | translate"
+      class="header font-weight-bold"
+    ></Label>
+    <Label
+      row="3"
+      textWrap="true"
+      [text]="onboardingSteps[current].text | translate"
+      class="description"
+    ></Label>
+  </GridLayout>
+  <Button row="2" class="-primary" text="Next" (tap)="onNext()"></Button>
+</GridLayout>

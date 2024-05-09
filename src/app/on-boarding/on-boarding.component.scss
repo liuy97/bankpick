@@ -1,0 +1,29 @@
+.header {
+  font-size: 26;
+  text-align: center;
+  margin: 6;
+}
+
+.description {
+  font-size: 14;
+  text-align: center;
+  margin: 6 18;
+}
+
+.active {
+  width: 19;
+  height: 6;
+  border-radius: 3;
+  border-color: var(--color-blue);
+  border-width: 1;
+  background-color: var(--color-blue);
+}
+
+.inactive {
+  width: 6;
+  height: 6;
+  border-radius: 3;
+  border-color: var(--color-blue);
+  border-width: 1;
+  background-color: #cce0ff;
+}

@@ -1,0 +1,56 @@
+.box {
+  border-bottom-width: 1;
+  border-color: #f4f4f4;
+  padding-top: 12;
+  padding-bottom: 10;
+}
+
+.round-box {
+  margin: 20 0;
+  padding: 30 16;
+  border-radius: 14;
+  border-color: #e7eaee;
+  border-width: 1;
+}
+
+.header {
+  color: #a2a2a7;
+  font-size: 14;
+}
+
+.icon {
+  color: #a2a2a7;
+}
+
+.name {
+  color: #1e1e2d;
+  font-size: 14;
+  text-align: left;
+}
+
+.date {
+  padding: 0 20;
+  text-align: center;
+  font-size: 14;
+  color: #1e1e2d;
+}
+
+.amount {
+  color: #7e848d;
+  font-size: 11;
+}
+
+.amount-input {
+  color: #1e1e2d;
+  font-size: 24;
+}
+
+.change-currency {
+  color: #ff3f60;
+  font-size: 11;
+}
+
+.currency {
+  color: #9bb2d4;
+  font-size: 24;
+}

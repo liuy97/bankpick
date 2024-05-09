@@ -1,0 +1,86 @@
+$primary: #000;
+$accent: #0066ff;
+$blue: #0066ff;
+
+@import "~@nativescript/theme/scss/variables";
+
+$colors: map-merge(
+  $colors,
+  (
+    blue: $blue,
+  )
+);
+
+$constants: map-merge($constants, $colors);
+
+$light-colors: map-merge(
+  $light-colors,
+  (
+    sub-text-color: lighten(black, 43%),
+  )
+);
+
+$dark-colors: map-merge(
+  $dark-colors,
+  (
+    sub-text-color: darken(white, 43%),
+  )
+);
+
+@import "~@nativescript/theme/scss/core/primitives/index";
+@import "~@nativescript/theme/scss/core/utilities";
+@import "~@nativescript/theme/scss/core/controls";
+@import "~@nativescript/theme/scss/index";
+
+ListView > StackLayout {
+  padding: 0;
+}
+
+* {
+  font-size: 14 !important;
+  font-weight: normal;
+  ios-a11y-adjusts-font-size: true;
+  ios-a11y-min-font-scale: 0.85;
+  ios-a11y-max-font-scale: 1.5;
+}
+
+.sub-text-color {
+  @include colorize($color: sub-text-color);
+}
+
+Button {
+  z-index: 0;
+  font-size: 16;
+  font-weight: bold;
+  vertical-align: middle;
+  border-radius: 16;
+}
+
+Button.-primary {
+  background-color: const(blue);
+  @include colorize($color: white);
+  border-width: 0;
+  height: 56 !important;
+  margin: 0 !important;
+}
+
+// Font icon class
+.fab {
+  font-family: "Font Awesome 5 Brands", "fa-brands-400";
+  font-weight: 400;
+}
+
+.fas {
+  font-family: "Font Awesome 5 Free", "fa-solid-900";
+  font-weight: 900;
+}
+
+.far {
+  font-family: "Font Awesome 5 Free", "fa-regular-400";
+  font-weight: 400;
+}
+
+.bankpick-icon {
+  font-size: 24;
+  font-family: "icomoon", "icomoon", serif;
+}

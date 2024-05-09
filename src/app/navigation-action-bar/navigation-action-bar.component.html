@@ -1,0 +1,31 @@
+<ActionBar flat="true" class="action-bar">
+  <GridLayout rows="*" columns="* 3* *" width="100%">
+    <Label
+      col="0"
+      colSpan="3"
+      [visibility]="title ? 'visible' : 'collapsed'"
+      class="title font-weight-bold text-center"
+      [text]="title"
+    ></Label>
+    <Label
+      col="0"
+      horizontalAlignment="left"
+      verticalAlignment="center"
+      [visibility]="showBack ? 'visible' : 'collapsed'"
+      text="&#xe914;"
+      class="bankpick-icon circle"
+      (tap)="onBack()"
+    ></Label>
+    <Label
+      col="2"
+      horizontalAlignment="center"
+      verticalAlignment="center"
+      [visibility]="icon ? 'visible' : 'collapsed'"
+      [text]="icon"
+      class="bankpick-icon circle"
+      (tap)="tapIcon()"
+    ></Label>
+  </GridLayout>
+
+  <NavigationButton [visibility]="'collapsed'"></NavigationButton>
+</ActionBar>

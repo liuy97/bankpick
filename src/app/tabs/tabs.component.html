@@ -1,0 +1,55 @@
+<GridLayout rows="*, auto">
+  <page-router-outlet
+    row="0"
+    name="homeOutlet"
+    [hidden]="isHidden$(tabId.Home) | async"
+  ></page-router-outlet>
+
+  <page-router-outlet
+    row="0"
+    name="myCardsOutlet"
+    [hidden]="isHidden$(tabId.MyCards) | async"
+  ></page-router-outlet>
+
+  <page-router-outlet
+    row="0"
+    name="statisticOutlet"
+    [hidden]="isHidden$(tabId.Statistic) | async"
+  ></page-router-outlet>
+
+  <page-router-outlet
+    row="0"
+    name="settingsOutlet"
+    [hidden]="isHidden$(tabId.Settings) | async"
+  ></page-router-outlet>
+
+  <BottomNavigationBar
+    activeColor="#0066ff"
+    inactiveColor="#8B8B94"
+    backgroundColor="#F4F4F4"
+    (tabSelected)="onBottomNavigationTabSelected($event)"
+    row="1"
+  >
+    <BottomNavigationTab
+      class="bankpick-icon"
+      [title]="'tabs.home' | translate"
+      icon="font://&#xe905;"
+    ></BottomNavigationTab>
+    <BottomNavigationTab
+      class="bankpick-icon"
+      [title]="'tabs.my_cards' | translate"
+      icon="font://&#xe900;"
+    ></BottomNavigationTab>
+    <BottomNavigationTab
+      class="bankpick-icon"
+      title="Statistics"
+      [title]="'tabs.statistics' | translate"
+      icon="font://&#xe907;"
+    ></BottomNavigationTab>
+    <BottomNavigationTab
+      class="bankpick-icon"
+      [title]="'tabs.settings' | translate"
+      icon="font://&#xe901;"
+    ></BottomNavigationTab>
+  </BottomNavigationBar>
+</GridLayout>

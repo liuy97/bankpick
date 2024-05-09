@@ -1,0 +1,68 @@
+<StackLayout class="m-x-20">
+  <Label class="header" [text]="'sign_up.title' | translate"></Label>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 *" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      class="text"
+      [text]="'sign_up.full_name' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe910;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="Tanya Myroniuk"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 *" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      class="text"
+      [text]="'sign_up.email_address' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe902;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="Tanya Myroniuk@gmail.com"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 *" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      class="text"
+      [text]="'sign_up.phone_number' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe906;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="+8801712663389"></Label>
+  </GridLayout>
+
+  <GridLayout
+    rows="auto 16 auto"
+    columns="auto 16 * auto"
+    class="item border m-b-30"
+  >
+    <Label
+      row="0"
+      colSpan="4"
+      class="text"
+      [text]="'sign_up.password' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe903;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="**********"></Label>
+    <Label row="2" col="3" class="bankpick-icon icon" text="&#xe904;"></Label>
+  </GridLayout>
+
+  <Button
+    class="-primary"
+    [text]="'sign_up.button' | translate"
+    (tap)="login()"
+  ></Button>
+
+  <GridLayout rows="auto" columns="* auto auto *" class="m-y-30">
+    <Label col="1" [text]="'sign_up.have_account' | translate"></Label>
+    <Label
+      col="2"
+      class="sign-in"
+      [text]="'sign_up.login' | translate"
+      (tap)="signup()"
+    ></Label>
+  </GridLayout>
+</StackLayout>

@@ -1,0 +1,40 @@
+<navigation-action-bar
+  [title]="'language.title' | translate"
+></navigation-action-bar>
+
+<GridLayout rows="auto 1 auto 1" columns="* auto" class="box">
+  <Label
+    row="0"
+    col="0"
+    colSpan="2"
+    class="language"
+    text="{{ 'language.chinese' | translate }}"
+    (tap)="updateLanguage('zh')"
+  ></Label>
+  <Label
+    row="0"
+    col="1"
+    class="bankpick-icon selected"
+    text="&#xe915;"
+    (tap)="updateLanguage('zh')"
+    [visibility]="selectedLanguage === 'zh' ? 'visible' : 'collapsed'"
+  ></Label>
+  <StackLayout row="1" colSpan="2" col="0" class="divider"></StackLayout>
+  <Label
+    row="2"
+    col="0"
+    colSpan="2"
+    class="language"
+    text="{{ 'language.english' | translate }}"
+    (tap)="updateLanguage('en')"
+  ></Label>
+  <Label
+    row="2"
+    col="1"
+    class="bankpick-icon selected"
+    text="&#xe915;"
+    [visibility]="selectedLanguage === 'en' ? 'visible' : 'collapsed'"
+    (tap)="updateLanguage('en')"
+  ></Label>
+  <StackLayout row="3" colSpan="2" col="0" class="divider"></StackLayout>
+</GridLayout>

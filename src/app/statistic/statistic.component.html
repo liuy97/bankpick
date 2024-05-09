@@ -1,0 +1,31 @@
+<navigation-action-bar
+  [showBack]="false"
+  [title]="'statistic.title' | translate"
+  [icon]="'\ue90d'"
+></navigation-action-bar>
+
+<GridLayout rows="auto auto *" columns="* auto" class="m-x-20">
+  <Image
+    row="0"
+    col="0"
+    class="m-y-20"
+    colSpan="2"
+    src="~/app/assets/images/statistic.png"
+    stretch="aspectFit"
+  ></Image>
+
+  <Label
+    row="1"
+    col="0"
+    class="p-y-10 t-18 font-weight-bold"
+    text="Transaction"
+  ></Label>
+  <Label row="1" col="1" class="see-all" text="Sell All"></Label>
+
+  <statistic-entries
+    row="2"
+    col="0"
+    colSpan="2"
+    [statisticEntries]="entries"
+  ></statistic-entries>
+</GridLayout>

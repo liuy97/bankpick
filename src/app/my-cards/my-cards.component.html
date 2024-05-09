@@ -1,0 +1,46 @@
+<navigation-action-bar
+  [showBack]="false"
+  [title]="'my_cards.title' | translate"
+  [icon]="'\ue917'"
+  (iconEvent)="addNewCard()"
+></navigation-action-bar>
+
+<GridLayout rows="auto auto auto auto auto auto" class="m-20">
+  <Image
+    row="0"
+    class="m-y-20"
+    src="~/app/assets/images/master-card.png"
+    stretch="aspectFit"
+  ></Image>
+
+  <statistic-entry
+    row="1"
+    [statisticEntry]="entries[0]"
+    *ngIf="entries[0]"
+  ></statistic-entry>
+  <statistic-entry
+    row="2"
+    [statisticEntry]="entries[1]"
+    *ngIf="entries[1]"
+  ></statistic-entry>
+  <statistic-entry
+    row="3"
+    [statisticEntry]="entries[2]"
+    *ngIf="entries[2]"
+  ></statistic-entry>
+
+  <Label
+    row="4"
+    class="t-18 font-weight-bold m-y-20"
+    text="Monthly spending limit"
+  ></Label>
+  <StackLayout row="5" class="box">
+    <Label text="Amount: $8,545.00" marginBottom="12"></Label>
+    <Slider value="46" minValue="0" maxValue="100" margin="0" />
+    <GridLayout rows="auto" columns="auto * auto" marginTop="12">
+      <Label col="0" text="$0" class="text"></Label>
+      <Label col="1" text="$4,600" class="text-center"></Label>
+      <Label col="2" text="$10000" class="text"></Label>
+    </GridLayout>
+  </StackLayout>
+</GridLayout>

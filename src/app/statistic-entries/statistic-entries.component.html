@@ -1,0 +1,7 @@
+<ListView [items]="statisticEntries">
+  <ng-template let-item="item">
+    <StackLayout>
+      <statistic-entry [statisticEntry]="item"></statistic-entry>
+    </StackLayout>
+  </ng-template>
+</ListView>

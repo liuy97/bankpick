@@ -1,0 +1,60 @@
+<GridLayout rows="auto auto auto auto * 30" class="m-20">
+  <GridLayout row="0" rows="auto auto" columns="auto 22 * auto">
+    <Image
+      row="0"
+      rowSpan="2"
+      width="50"
+      height="50"
+      src="~/app/assets/images/profile.png"
+    ></Image>
+    <Label row="0" col="2" class="status" text="Welcome back"></Label>
+    <Label row="1" col="2" class="name t-18" text="Tanya Myroniuk"></Label>
+    <Label
+      row="0"
+      rowSpan="2"
+      col="3"
+      class="bankpick-icon circle"
+      text="&#xe919;"
+      (tap)="search()"
+    ></Label>
+  </GridLayout>
+
+  <Image
+    row="1"
+    class="m-y-20"
+    src="~/app/assets/images/master-card.png"
+    stretch="aspectFit"
+  ></Image>
+
+  <GridLayout row="2" columns="auto * auto * auto * auto">
+    <Label
+      col="0"
+      class="bankpick-icon circle"
+      text="&#xe90a;"
+      (tap)="sendMoney()"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon circle"
+      text="&#xe908;"
+      (tap)="requestMoney()"
+    ></Label>
+    <Label col="4" class="bankpick-icon circle" text="&#xe909;"></Label>
+    <Label col="6" class="bankpick-icon circle" text="&#xe916;"></Label>
+  </GridLayout>
+
+  <GridLayout row="3" columns="* auto">
+    <Label
+      col="0"
+      class="p-y-10 t-18 font-weight-bold"
+      text="Transaction"
+    ></Label>
+    <Label col="1" class="see-all" text="Sell All"></Label>
+  </GridLayout>
+  <statistic-entries
+    row="4"
+    col="0"
+    colSpan="2"
+    [statisticEntries]="entries"
+  ></statistic-entries>
+</GridLayout>

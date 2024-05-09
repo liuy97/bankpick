@@ -1,0 +1,24 @@
+<GridLayout rows="auto auto" columns="auto 16 * auto" class="p-y-10">
+  <Label
+    row="0"
+    rowSpan="2"
+    col="0"
+    class="fab circle"
+    [text]="statisticEntry.font"
+  ></Label>
+
+  <Label row="0" col="2" class="brand" [text]="statisticEntry.brand"></Label>
+  <Label
+    row="1"
+    col="2"
+    class="category"
+    [text]="statisticEntry.category"
+  ></Label>
+
+  <Label
+    row="0"
+    rowSpan="2"
+    col="3"
+    [text]="(statisticEntry.incoming ? '$' : '- $') + statisticEntry.amount"
+  ></Label>
+</GridLayout>

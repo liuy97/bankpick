@@ -1,0 +1,87 @@
+<navigation-action-bar
+  [title]="'send_money.title' | translate"
+></navigation-action-bar>
+
+<GridLayout rows="auto auto auto auto * 30" class="m-20">
+  <Image
+    row="0"
+    class="m-y-20"
+    src="~/app/assets/images/master-card.png"
+    stretch="aspectFit"
+  ></Image>
+
+  <GridLayout
+    row="1"
+    rows="auto auto auto"
+    class="round-box"
+    padding="16 12"
+    columns="auto * auto * auto * auto * auto"
+  >
+    <Label
+      row="0"
+      col="0"
+      colSpan="9"
+      class="send-to"
+      [text]="'send_money.send_to' | translate"
+    ></Label>
+    <Label row="1" col="0" text="&#xe917;" class="bankpick-icon avatar"></Label>
+    <Label row="2" col="0" class="label" text="Add"></Label>
+    <Image
+      row="1"
+      col="2"
+      class="avatar"
+      src="~/app/assets/images/1.png"
+    ></Image>
+    <Label row="2" col="2" class="label" text="Yamilet"></Label>
+    <Image
+      row="1"
+      col="4"
+      class="avatar"
+      src="~/app/assets/images/2.png"
+    ></Image>
+    <Label row="2" col="4" class="label" text="Yamilet"></Label>
+    <Image
+      row="1"
+      col="6"
+      class="avatar"
+      src="~/app/assets/images/3.png"
+    ></Image>
+    <Label row="2" col="6" class="label" text="Yamilet"></Label>
+    <Image
+      row="1"
+      col="8"
+      class="avatar"
+      src="~/app/assets/images/4.png"
+    ></Image>
+    <Label row="2" col="8" class="label" text="Yamilet"></Label>
+  </GridLayout>
+
+  <StackLayout row="2" padding="30 16" class="round-box">
+    <GridLayout rows="auto" columns="* auto">
+      <Label
+        col="0"
+        class="amount"
+        [text]="'send_money.enter_your_amount' | translate"
+      ></Label>
+      <Label
+        col="1"
+        class="change-currency"
+        [text]="'send_money.change_currency' | translate"
+      ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="auto 16 *" marginTop="20">
+      <Label
+        col="0"
+        class="currency"
+        [text]="'send_money.usd' | translate"
+      ></Label>
+      <TextField col="2" class="amount-input" text="36.00" />
+    </GridLayout>
+  </StackLayout>
+
+  <Button
+    class="-primary"
+    row="3"
+    text="{{ 'send_money.button' | translate }}"
+  ></Button>
+</GridLayout>

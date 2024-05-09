@@ -1,0 +1,42 @@
+<StackLayout class="m-x-20">
+  <Label class="header" [text]="'login.title' | translate"></Label>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 *" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      class="text"
+      [text]="'login.email_address' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe903;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="TanyaMyroniuk@gmail.com"></Label>
+  </GridLayout>
+
+  <GridLayout
+    rows="auto 16 auto"
+    columns="auto 16 * auto"
+    class="item border m-b-30"
+  >
+    <Label
+      row="0"
+      colSpan="4"
+      class="text"
+      [text]="'login.password' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe903;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="**********"></Label>
+    <Label row="2" col="3" class="bankpick-icon icon" text="&#xe904;"></Label>
+  </GridLayout>
+
+  <Button class="-primary" text="Login" (tap)="login()"></Button>
+
+  <GridLayout rows="auto" columns="* auto auto *" class="m-y-30">
+    <Label col="1" [text]="'login.new_user' | translate"></Label>
+    <Label
+      col="2"
+      class="sign-up"
+      [text]="'login.sign_up' | translate"
+      (tap)="signup()"
+    ></Label>
+  </GridLayout>
+</StackLayout>

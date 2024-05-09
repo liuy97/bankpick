@@ -1,0 +1,47 @@
+<navigation-action-bar
+  [title]="'add_new_card.title' | translate"
+></navigation-action-bar>
+
+<StackLayout margin="20">
+  <Image src="~/app/assets/images/master-card.png"></Image>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 *" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      class="text"
+      [text]="'add_new_card.cardholder_name' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe910;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="Tanya Myroniuk"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="* 16 *" class="item border">
+    <Label
+      row="0"
+      col="0"
+      class="text"
+      [text]="'add_new_card.expiry_date' | translate"
+    ></Label>
+    <Label
+      row="0"
+      col="2"
+      class="text"
+      [text]="'add_new_card.cvv' | translate"
+    ></Label>
+    <Label row="2" col="0" text="09/06/2024"></Label>
+    <Label row="2" col="2" text="6986"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto 16 * auto" class="item border">
+    <Label
+      row="0"
+      colSpan="4"
+      class="text"
+      [text]="'add_new_card.card_number' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe90f;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="2" text="4562 1122 4595 7852"></Label>
+    <Image row="2" col="3" src="~/app/assets/images/master-icon.png"></Image>
+  </GridLayout>
+</StackLayout>

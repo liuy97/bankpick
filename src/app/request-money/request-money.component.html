@@ -1,0 +1,97 @@
+<navigation-action-bar
+  [title]="'request_money.title' | translate"
+></navigation-action-bar>
+
+<StackLayout class="m-x-20">
+  <GridLayout rows="auto 16 auto" columns="auto *" class="box">
+    <Label
+      row="0"
+      col="0"
+      colSpan="2"
+      class="header"
+      [text]="'request_money.payer_name' | translate"
+    ></Label>
+    <Label
+      row="2"
+      col="0"
+      text="&#xe910;"
+      class="bankpick-icon icon m-r-16"
+    ></Label>
+    <Label row="2" col="1" class="name" text="Tanya Myroniuk"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto *" class="box">
+    <Label
+      row="0"
+      col="0"
+      colSpan="2"
+      class="header"
+      [text]="'request_money.email_address' | translate"
+    ></Label>
+    <Label
+      row="2"
+      col="0"
+      text="&#xe902;"
+      class="bankpick-icon icon m-r-16"
+    ></Label>
+    <Label row="2" col="1" class="name" text="Tanya Myroniuk@gmail.com"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto *" class="box">
+    <Label
+      row="0"
+      col="0"
+      colSpan="2"
+      class="header"
+      [text]="'request_money.description' | translate"
+    ></Label>
+    <Label
+      row="2"
+      col="0"
+      text="&#xe910;"
+      class="bankpick-icon icon m-r-16"
+    ></Label>
+    <Label row="2" col="1" class="name" text="Tanya Myroniuk"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto * auto" class="box">
+    <Label
+      row="0"
+      col="0"
+      colSpan="3"
+      class="header"
+      [text]="'request_money.monthly_due_by' | translate"
+    ></Label>
+    <Label row="2" col="0" class="date" text="28"></Label>
+    <Label row="2" col="1" class="date" text="09"></Label>
+    <Label row="2" col="2" class="date" text="2000"></Label>
+  </GridLayout>
+
+  <StackLayout class="round-box">
+    <GridLayout rows="auto" columns="* auto">
+      <Label
+        col="0"
+        class="amount"
+        [text]="'request_money.enter_your_amount' | translate"
+      ></Label>
+      <Label
+        col="1"
+        class="change-currency"
+        [text]="'request_money.change_currency' | translate"
+      ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="auto 16 *" marginTop="20">
+      <Label
+        col="0"
+        class="currency"
+        [text]="'request_money.usd' | translate"
+      ></Label>
+      <TextField col="2" class="amount-input" text="26.00.00" />
+    </GridLayout>
+  </StackLayout>
+
+  <Button
+    class="-primary"
+    text="{{ 'request_money.button' | translate }}"
+  ></Button>
+</StackLayout>

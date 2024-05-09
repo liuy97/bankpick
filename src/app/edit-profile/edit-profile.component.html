@@ -1,0 +1,68 @@
+<navigation-action-bar
+  [title]="'edit_profile.title' | translate"
+></navigation-action-bar>
+
+<StackLayout margin="20">
+  <GridLayout rows="auto auto auto" columns="* auto *">
+    <Image
+      row="0"
+      col="1"
+      width="70"
+      height="70"
+      src="~/app/assets/images/profile.png"
+    ></Image>
+    <Label
+      row="1"
+      col="1"
+      class="name text-center"
+      text="Tanya Myroniuk"
+    ></Label>
+    <Label
+      row="2"
+      col="1"
+      class="title text-center"
+      text="Senior Designer"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto *" class="item border">
+    <Label
+      row="0"
+      colSpan="2"
+      [text]="'edit_profile.full_name' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe910;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="1" text="Tanya Myroniuk"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto *" class="item border">
+    <Label
+      row="0"
+      colSpan="2"
+      [text]="'edit_profile.full_name' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe902;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="1" text="Tanya Myroniuk@gmail.com"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto *" class="item border">
+    <Label
+      row="0"
+      colSpan="2"
+      [text]="'edit_profile.phone_number' | translate"
+    ></Label>
+    <Label row="2" col="0" text="&#xe906;" class="bankpick-icon icon"></Label>
+    <Label row="2" col="1" text="+8801712663389"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto 16 auto" columns="auto * auto" class="item border">
+    <Label
+      row="0"
+      colSpan="3"
+      [text]="'edit_profile.birth_date' | translate"
+    ></Label>
+    <Label row="2" col="0" text="28"></Label>
+    <Label row="2" col="1" text="September" class="text-center"></Label>
+    <Label row="2" col="2" text="2000"></Label>
+  </GridLayout>
+</StackLayout>

@@ -1,0 +1,20 @@
+<navigation-action-bar
+  [title]="'contact_us.title' | translate"
+></navigation-action-bar>
+
+<StackLayout class="m-20">
+  <GridLayout rows="auto" columns="* auto" class="box">
+    <Label
+      row="0"
+      col="0"
+      colSpan="2"
+      class="language"
+      text="{{ 'contact_us.info' | translate }}"
+    ></Label>
+  </GridLayout>
+
+  <Button
+    class="-primary"
+    text="{{ 'contact_us.button' | translate }}"
+  ></Button>
+</StackLayout>

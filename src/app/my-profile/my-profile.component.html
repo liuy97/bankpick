@@ -1,0 +1,145 @@
+<navigation-action-bar
+  [title]="'my_profile.title' | translate"
+  [icon]="'\ue911'"
+  (iconEvent)="navigate()"
+></navigation-action-bar>
+
+<StackLayout margin="20">
+  <GridLayout rows="auto auto" columns="auto 22 *">
+    <Image
+      row="0"
+      rowSpan="2"
+      width="70"
+      height="70"
+      src="~/app/assets/images/profile.png"
+    ></Image>
+    <Label row="0" col="2" class="name" text="Tanya Myroniuk"></Label>
+    <Label row="1" col="2" class="title" text="Senior Designer"></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe910;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.personal_information' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe90f;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.payment_preferences' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe90e;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.banks_and_cards' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe90d;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.notifications' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe90c;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.message_center' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe90b;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.address' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+
+  <GridLayout rows="auto" columns="auto * auto" class="item border">
+    <Label
+      col="0"
+      text="&#xe901;"
+      class="bankpick-icon pull-left icon m-r-16"
+    ></Label>
+    <Label
+      col="1"
+      [text]="'my_profile.settings' | translate"
+      class="text-left"
+    ></Label>
+    <Label
+      col="2"
+      class="bankpick-icon pull-right icon"
+      text="&#xe912;"
+    ></Label>
+  </GridLayout>
+</StackLayout>
