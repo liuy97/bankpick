@@ -1,0 +1,10 @@
+.tabs {
+  active-color: #0066ff;
+  inactive-color: #8b8b94;
+  background-color: #f4f4f4;
+
+  :host-context(.ns-dark) & {
+    inactive-color: #74746b;
+    background-color: #0b0b0b;
+  }
+}

@@ -8,6 +8,7 @@ import { ActivatedRoute } from "@angular/router";
 import { NavigationService } from "~/services/navigation.service";
 import { SharedModule } from "../shared.module";
 import { AuthService } from "~/services/auth.service";
+import Theme from "@nativescript/theme";
 
 @Component({
   moduleId: module.id,
@@ -49,5 +50,9 @@ export class SettingsComponent implements OnInit {
     this.navigationService
       .navigate(["/login"], { clearHistory: true })
       .then(() => console.log("Navigated to login"));
+  }
+
+  toggleDarkMode() {
+    Theme.toggleMode();
   }
 }

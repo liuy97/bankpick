@@ -6,9 +6,6 @@
 .circle {
   border-width: 1;
   border-radius: 50%;
-  border-color: #f4f4f4;
-  background-color: #f4f4f4;
-  color: #1e1e2d;
   width: 54;
   height: 54;
   font-size: 20;
@@ -16,6 +13,18 @@
   padding: 0;
   text-align: center;
   vertical-align: middle;
+}
+
+.circle-color {
+  color: #1e1e2d;
+  border-color: #f4f4f4;
+  background-color: #f4f4f4;
+
+  :host-context(.ns-dark) & {
+    color: #e1e1d2;
+    border-color: #0b0b0b;
+    background-color: #0b0b0b;
+  }
 }
 
 .see-all {

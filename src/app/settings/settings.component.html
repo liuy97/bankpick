@@ -4,89 +4,100 @@
   [icon]="'\ue913'"
   (iconEvent)="logout()"
 ></navigation-action-bar>
-<StackLayout class="m-x-20">
-  <Label class="header" [text]="'settings.general' | translate"></Label>
+<ScrollView>
+  <StackLayout class="m-x-20">
+    <Label class="header" [text]="'settings.general' | translate"></Label>
 
-  <GridLayout
-    rows="auto"
-    columns="* auto auto"
-    class="item border"
-    (tap)="navigate('language')"
-  >
-    <Label [text]="'settings.language' | translate"></Label>
-    <Label col="1" text="English" class="text"></Label>
-    <Label
-      col="2"
-      class="bankpick-icon pull-right icon"
-      text="&#xe912;"
-    ></Label>
-  </GridLayout>
+    <GridLayout
+      rows="auto"
+      columns="* auto auto"
+      class="item border"
+      (tap)="navigate('language')"
+    >
+      <Label [text]="'settings.language' | translate"></Label>
+      <Label col="1" text="English" class="text"></Label>
+      <Label
+        col="2"
+        class="bankpick-icon pull-right icon"
+        text="&#xe912;"
+      ></Label>
+    </GridLayout>
 
-  <GridLayout rows="auto" columns="* auto" class="item border">
-    <Label
-      col="0"
-      [text]="'settings.my_profile' | translate"
-      (tap)="navigate('my-profile')"
-    ></Label>
-    <Label
-      col="1"
-      (tap)="navigate('my-profile')"
-      class="bankpick-icon pull-right icon"
-      text="&#xe912;"
-    ></Label>
-  </GridLayout>
+    <GridLayout rows="auto" columns="* auto" class="item border">
+      <Label
+        col="0"
+        [text]="'settings.my_profile' | translate"
+        (tap)="navigate('my-profile')"
+      ></Label>
+      <Label
+        col="1"
+        (tap)="navigate('my-profile')"
+        class="bankpick-icon pull-right icon"
+        text="&#xe912;"
+      ></Label>
+    </GridLayout>
 
-  <GridLayout rows="auto" columns="* auto" class="item border">
-    <Label
-      col="0"
-      [text]="'settings.contact_us' | translate"
-      (tap)="navigate('contact-us')"
-    ></Label>
-    <Label
-      col="1"
-      (tap)="navigate('contact-us')"
-      class="bankpick-icon pull-right icon"
-      text="&#xe912;"
-    ></Label>
-  </GridLayout>
+    <GridLayout rows="auto" columns="* auto" class="item border">
+      <Label
+        col="0"
+        [text]="'settings.contact_us' | translate"
+        (tap)="navigate('contact-us')"
+      ></Label>
+      <Label
+        col="1"
+        (tap)="navigate('contact-us')"
+        class="bankpick-icon pull-right icon"
+        text="&#xe912;"
+      ></Label>
+    </GridLayout>
 
-  <Label class="header" [text]="'settings.security' | translate"></Label>
+    <Label class="header" [text]="'settings.security' | translate"></Label>
 
-  <GridLayout rows="auto" columns="* auto" class="item border">
-    <Label
-      col="0"
-      [text]="'settings.change_password' | translate"
-      (tap)="navigate('change-password')"
-    ></Label>
-    <Label
-      col="1"
-      (tap)="navigate('change-password')"
-      class="bankpick-icon pull-right icon"
-      text="&#xe912;"
-    ></Label>
-  </GridLayout>
+    <GridLayout rows="auto" columns="* auto" class="item border">
+      <Label
+        col="0"
+        [text]="'settings.change_password' | translate"
+        (tap)="navigate('change-password')"
+      ></Label>
+      <Label
+        col="1"
+        (tap)="navigate('change-password')"
+        class="bankpick-icon pull-right icon"
+        text="&#xe912;"
+      ></Label>
+    </GridLayout>
 
-  <GridLayout rows="auto" columns="* auto" class="item border">
-    <Label
-      col="0"
-      [text]="'settings.privacy_policy' | translate"
-      (tap)="navigate('privacy-policy')"
-    ></Label>
-    <Label
-      col="1"
-      (tap)="navigate('privacy-policy')"
-      class="bankpick-icon pull-right icon"
-      text="&#xe912;"
-    ></Label>
-  </GridLayout>
+    <GridLayout rows="auto" columns="* auto" class="item border">
+      <Label
+        col="0"
+        [text]="'settings.privacy_policy' | translate"
+        (tap)="navigate('privacy-policy')"
+      ></Label>
+      <Label
+        col="1"
+        (tap)="navigate('privacy-policy')"
+        class="bankpick-icon pull-right icon"
+        text="&#xe912;"
+      ></Label>
+    </GridLayout>
 
-  <Label
-    class="m-y-16 text"
-    [text]="'settings.privacy_description' | translate"
-  ></Label>
+    <Label
+      class="m-y-16 text"
+      [text]="'settings.privacy_description' | translate"
+    ></Label>
 
-  <GridLayout rows="auto" columns="* auto" class="m-y-16">
-    <Label col="0" [text]="'settings.biometric' | translate"></Label>
-    <Switch col="1" class="pull-right"></Switch>
-  </GridLayout>
-</StackLayout>
+    <GridLayout rows="auto" columns="* auto" class="m-y-16">
+      <Label col="0" [text]="'settings.biometric' | translate"></Label>
+      <Switch col="1" class="pull-right"></Switch>
+    </GridLayout>
+
+    <GridLayout rows="auto" columns="* auto" class="m-y-16">
+      <Label col="0" [text]="'settings.dark_mode' | translate"></Label>
+      <Switch
+        col="1"
+        class="pull-right"
+        (checkedChange)="toggleDarkMode()"
+      ></Switch>
+    </GridLayout>
+  </StackLayout>
+</ScrollView>
