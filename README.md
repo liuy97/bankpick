@@ -2,8 +2,12 @@
 
 mobile bank app with NativeScript and Angular
 
+## Nativescript Setup
+[Setting up your system to run NativeScript apps](https://docs.nativescript.org/setup/)
+
 ## run app
 ```shell
+ns doctor
 ns run ios
 ns run android
 ```
@@ -17,6 +21,7 @@ ns run android
 6. cards
 7. statistic
 8. settings
+9. dark mode
 
 ## screenshots
 ![home](https://github.com/liuy97/bankpick/blob/main/screenshots/home.png)
@@ -34,7 +39,6 @@ ns run android
 
 ## License
 
-bankpick UI from ui-kits cc-by-4.0
-https://www.figma.com/community/file/1367091995851378803/230-ui-kits-apps-for-free
+[bankpick UI from ui-kits cc-by-4.0](https://www.figma.com/community/file/1367091995851378803/230-ui-kits-apps-for-free)
 
-bank app is available under MIT
+bank app template is available under MIT

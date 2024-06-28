@@ -4,6 +4,9 @@
 ></navigation-action-bar>
 
 <GridLayout rows="auto * 20" class="m-20">
-  <SearchBar row="0" hint="Search..." />
-  <statistic-entries row="1" [statisticEntries]="entries"></statistic-entries>
+  <SearchBar row="0" hint="Search..." (textChange)="search($event)" />
+  <statistic-entries
+    row="1"
+    [statisticEntries]="displayedEntries"
+  ></statistic-entries>
 </GridLayout>
